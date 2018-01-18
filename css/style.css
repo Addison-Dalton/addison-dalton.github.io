@@ -1,0 +1,27 @@
+/*===========================================
+GENERAL PAGE SETTINGS
+============================================*/
+.container-fluid{
+    padding-right: 0;
+    padding-left: 0;
+}
+
+/*==========================================
+TOP NAVBAR
+===========================================*/
+
+#navbar{
+    background-color: #304051;
+}
+
+#navbar .navbar-brand{
+    color:whitesmoke;
+    font-size: 2em;
+}
+
+#navbar .navbar-nav li.nav-item a.nav-link{
+    color:whitesmoke;
+    margin-right: 12px;
+    margin-left: 12px;
+    font-size: 1.2em; 
+}
