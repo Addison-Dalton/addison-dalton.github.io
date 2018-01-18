@@ -25,3 +25,37 @@ TOP NAVBAR
     margin-left: 12px;
     font-size: 1.2em; 
 }
+
+#navbar .navbar-toggler{
+    border-color:  #1ebb9b;
+    background-color: #1ebb9b;
+}
+
+/*==========================================
+HEADER
+===========================================*/
+.masthead{
+    background-color: #1ebb9b;
+}
+
+#profile-logo{
+    margin-top: 10%;
+}
+
+#name-text{
+    font-size: 3.5em;
+}
+
+.hr-line{
+    width: 60%;
+    margin: auto;
+    height: 28px;
+    border-bottom: 3px solid white;
+    text-align: center;
+}
+
+.hr-text{
+    font-size: 30px;
+    background-color: #1ebb9b;
+    padding: 0 10px;
+}
