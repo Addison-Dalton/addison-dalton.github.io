@@ -10,6 +10,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
         crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -17,27 +18,27 @@
     <!--page content-->
     <div class="container-fluid">
         <!--navbar-->
-        <nav class="navbar navbar-toggleable-md navbar-light" id="navbar">
+        <nav class="navbar navbar-toggleable-md navbar-light fixed-top" id="navbar">
             <div class="container">
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand text-uppercase font-weight-bold" href="#home">PLACEHOLDER</a>
+                <a class="navbar-brand text-uppercase font-weight-bold" href="#home">&lt;Portfolio/&gt;</a>
 
                 <div class="collapse navbar-collapse text-uppercase font-weight-bold" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Portfolio</a>
+                            <a class="nav-link" href="#projects">Projects</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Skills</a>
+                            <a class="nav-link" href="#skills">Skills</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="#about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="#about">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -58,17 +59,17 @@
         </header>
         <!--/header-->
 
-        <!--portfolio-->
-        <section id="portfolio">
+        <!--projects-->
+        <section id="projects">
             <div class="container">
                 <div class="text-center">
-                    <h1 class="text-uppercase navy-color font-weight-bold section-title">Portfolio</h1>
+                    <h1 class="text-uppercase navy-color font-weight-bold section-title">Projects</h1>
                     <div class="hr-line-navy mb-5">
                         <span class="hr-text navy-color white-bg">&lt;/&gt;</span>
                     </div>
                 </div>
 
-                <div class="row text-center">
+                <div class="row text-center pb-5">
                     <div class="col-s-12 col-md-6 col-lg-4">
                         <div class="project-image">
                             <a href="https://play.google.com/store/apps/details?id=com.addisondalton.teatime&hl=en" target="_blank">
@@ -150,13 +151,13 @@
                 </div>
             </div>
         </section>
-        <!--/portfolio-->
+        <!--/projects-->
 
         <!--skills-->
         <section id="skills">
-            <div class="container">
+            <div class="container pt-1 pb-5">
                 <div class="text-center">
-                    <h1 class="text-uppercase text-white font-weight-bold section-title pt-5">Skills</h1>
+                    <h1 class="text-uppercase text-white font-weight-bold section-title">Skills</h1>
                     <div class="hr-line-white mb-5">
                         <span class="hr-text text-white light-green-bg">&lt;/&gt;</span>
                     </div>
@@ -204,6 +205,68 @@
             </div>
         </section>
         <!--/skills-->
+
+        <!--about-->
+        <section id="about">
+            <div class="container">
+                <div class="text-center">
+                    <h1 class="text-uppercase navy-color font-weight-bold section-title">About</h1>
+                    <div class="hr-line-navy mb-5">
+                        <span class="hr-text navy-color white-bg">&lt;/&gt;</span>
+                    </div>
+                </div>
+
+                <div class="text-center pb-5">
+                    <p id="about-paragraph">
+                        Hey there, allow me to introduce myself. I studied at Averett University where I double majored in Mathematics and
+                        Computer Science. I graduated in May 2015, since then I have played around in many areas of software
+                        development. I have spent time with web development, Android development, Python, and others! In
+                        my spare time I like to run, workout, and enjoy PC gaming. Feel free to contact or connect with me
+                        below!
+                    </p>
+                </div>
+            </div>
+
+        </section>
+        <!--/about-->
+
+        <!--footer-->
+        <footer id="contact">
+            <div class="container pb-4">
+                <div class="row">
+                    <div class="col-md-6 col-s-12 text-center">
+                        <h2 class="text-uppercase">Contact me</h2>
+                        <p class="text-left pt-3">Questions, comments, suggestions? Or just feel like chatting? Email me at:
+                            <span class="text-underline">addisonbcdalton@gmail.com</span>
+                        </p>
+                    </div>
+                    <div class="col-md-6 col-s-12 text-center">
+                        <h2 class="text-uppercase">CONNECT WITH ME</h2>
+                        <ul id="social-icon-list">
+                            <li>
+                                <!--linkedin-->
+                                <a href="https://www.linkedin.com/in/addison-dalton-914b44109" target="_blank">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <!--github-->
+                                <a href="https://github.com/Addison-Dalton" target="_blank">
+                                    <i class="fa fa-github"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <!--codepen-->
+                                <a href="https://codepen.io/bugsinthecode/" target="_blank">
+                                    <i class="fa fa-codepen"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--/footer-->
     </div>
     <!--/page content-->
 

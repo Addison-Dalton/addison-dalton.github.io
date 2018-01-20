@@ -1,12 +1,26 @@
 /*===========================================
 GENERAL PAGE SETTINGS
 ============================================*/
-.container-fluid{
+
+body {
+    padding-top: 2%;
+}
+
+:target:before {
+    content: "";
+    display: block;
+    height: 10px;
+    /* fixed header height*/
+    margin: -10px 0 0;
+    /* negative fixed header height */
+}
+
+.container-fluid {
     padding-right: 0;
     padding-left: 0;
 }
 
-.hr-line-white{
+.hr-line-white {
     width: 60%;
     margin: auto;
     height: 28px;
@@ -14,7 +28,7 @@ GENERAL PAGE SETTINGS
     text-align: center;
 }
 
-.hr-line-navy{
+.hr-line-navy {
     width: 60%;
     margin: auto;
     height: 28px;
@@ -22,85 +36,99 @@ GENERAL PAGE SETTINGS
     text-align: center;
 }
 
-.hr-text{
+.hr-text {
     font-size: 30px;
     padding: 0 10px;
 }
 
-.section-title{
-    font-size: 2em;
-    margin-top: 7%;
+.section-title {
+    font-size: 2.5em;
+    margin-top: 5%;
 }
 
-.light-green-bg{
+.light-green-bg {
     background-color: #1ebb9b;
 }
 
-.navy-color{
+.navy-color {
     color: #304051;
 }
 
-.white-bg{
+.white-bg {
     background-color: white;
 }
 
+.text-underline {
+    text-decoration: underline;
+}
+
+.text-align-left {
+    text-align: left;
+}
+
 /*==========================================
-TOP NAVBAR
+NAVBAR
 ===========================================*/
 
-#navbar{
+#navbar {
     background-color: #304051;
 }
 
-#navbar .navbar-brand{
-    color:whitesmoke;
+#navbar .navbar-brand {
+    color: whitesmoke;
     font-size: 2em;
 }
 
-#navbar .navbar-nav li.nav-item a.nav-link{
-    color:whitesmoke;
+#navbar .navbar-nav li.nav-item a.nav-link {
+    color: whitesmoke;
     margin-right: 12px;
     margin-left: 12px;
-    font-size: 1.2em; 
+    font-size: 1.2em;
 }
 
-#navbar .navbar-toggler{
-    border-color:  #1ebb9b;
+#navbar .navbar-toggler {
+    border-color: #1ebb9b;
     background-color: #1ebb9b;
+}
+
+#navbar .navbar-nav li.nav-item a.nav-link:hover {
+    color: #1ebb9b;
 }
 
 /*==========================================
 HEADER
 ===========================================*/
-.masthead{
+
+.masthead {
     background-color: #1ebb9b;
 }
 
-#profile-logo{
+#profile-logo {
     margin-top: 10%;
 }
 
-#name-text{
+#name-text {
     font-size: 3.5em;
 }
 
-
 /*=========================================
-PORTFOLIO
+PROJECTS
 ===========================================*/
-.col-padding{
+
+.col-padding {
     padding: 10px;
 }
-.project-image{
+
+.project-image {
     overflow: hidden;
     border: 1px solid #304051;
     border-radius: 10px;
     box-shadow: 2px 2px 10px #304051;
     position: relative;
-	line-height: 0;
+    line-height: 0;
 }
 
-.project-title{
+.project-title {
     margin-top: .5em;
     border-bottom: 2px solid white;
     padding-bottom: 5px;
@@ -109,22 +137,23 @@ PORTFOLIO
     font-size: 2em;
 }
 
-.image-overlay{
+.image-overlay {
     color: white;
     position: absolute;
     top: 0;
-	right: 0;
-	bottom: 0;
-    left: 0;;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    ;
     justify-content: center;
     align-items: center;
     background: rgba(0, 0, 0, .5);
     opacity: 0;
     border-radius: 10px;
-    transition: opacity .5s;    
+    transition: opacity .5s;
 }
 
-.image-overlay:hover{
+.image-overlay:hover {
     opacity: 1;
 }
 
@@ -132,20 +161,92 @@ PORTFOLIO
   SKILLS
   =======================================*/
 
-  #skills{
-      background-color: #1ebb9b;
-  }
+#skills {
+    background-color: #1ebb9b;
+}
 
-  .skill-image img{
-      max-height: 280px;
-  }
+.skill-image img {
+    max-height: 280px;
+}
+
+/*=======================================
+  ABOUT
+  =======================================*/
+
+#about-paragraph {
+    margin: auto;
+    max-width: 60%;
+    font-size: 1.4em;
+    text-align: left;
+}
+
+/*=======================================
+  FOOTER/CONTACT
+  =======================================*/
+
+#contact {
+    background-color: #304051;
+    color: white;
+    padding-top: 40px;
+}
+
+#social-icon-list {
+    list-style: none;
+    display: inline;
+    font-size: 3em;
+    padding: 0;
+}
+
+#social-icon-list li {
+    padding: 10px;
+    display: inline;
+}
+
+#social-icon-list li a{
+    text-decoration: none;
+}
+
+.fa-github {
+    color: white;
+}
+
+.fa-github:hover {
+    color: #1ebb9b;
+}
+
+.fa-linkedin {
+    color: white;
+}
+
+.fa-linkedin:hover {
+    color: #1ebb9b;
+}
+
+.fa-codepen {
+    color: white;
+}
+
+.fa-codepen:hover {
+    color: #1ebb9b;
+}
 
 /*=======================================
   @MEDIA QUERIES
   =======================================*/
-@media (max-width: 768px) and (min-width: 379px){
-    .project-image{
+
+@media (max-width: 768px) and (min-width: 379px) {
+    .project-image {
         width: 350px;
         margin: auto;
+    }
+}
+
+@media (max-width:768px){
+    #profile-logo{
+        padding-top: 40px;
+    }
+
+    .navbar-toggler-right{
+        position: fixed;
     }
 }
