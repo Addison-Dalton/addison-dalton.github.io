@@ -6,6 +6,44 @@ GENERAL PAGE SETTINGS
     padding-left: 0;
 }
 
+.hr-line-white{
+    width: 60%;
+    margin: auto;
+    height: 28px;
+    border-bottom: 3px solid white;
+    text-align: center;
+}
+
+.hr-line-navy{
+    width: 60%;
+    margin: auto;
+    height: 28px;
+    border-bottom: 3px solid #304051;
+    text-align: center;
+}
+
+.hr-text{
+    font-size: 30px;
+    padding: 0 10px;
+}
+
+.section-title{
+    font-size: 2em;
+    margin-top: 7%;
+}
+
+.light-green-bg{
+    background-color: #1ebb9b;
+}
+
+.navy-color{
+    color: #304051;
+}
+
+.white-bg{
+    background-color: white;
+}
+
 /*==========================================
 TOP NAVBAR
 ===========================================*/
@@ -46,16 +84,68 @@ HEADER
     font-size: 3.5em;
 }
 
-.hr-line{
-    width: 60%;
-    margin: auto;
-    height: 28px;
-    border-bottom: 3px solid white;
-    text-align: center;
+
+/*=========================================
+PORTFOLIO
+===========================================*/
+.col-padding{
+    padding: 10px;
+}
+.project-image{
+    overflow: hidden;
+    border: 1px solid #304051;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #304051;
+    position: relative;
+	line-height: 0;
 }
 
-.hr-text{
-    font-size: 30px;
-    background-color: #1ebb9b;
-    padding: 0 10px;
+.project-title{
+    margin-top: .5em;
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    font-size: 2em;
+}
+
+.image-overlay{
+    color: white;
+    position: absolute;
+    top: 0;
+	right: 0;
+	bottom: 0;
+    left: 0;;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, .5);
+    opacity: 0;
+    border-radius: 10px;
+    transition: opacity .5s;    
+}
+
+.image-overlay:hover{
+    opacity: 1;
+}
+
+/*=======================================
+  SKILLS
+  =======================================*/
+
+  #skills{
+      background-color: #1ebb9b;
+  }
+
+  .skill-image img{
+      max-height: 280px;
+  }
+
+/*=======================================
+  @MEDIA QUERIES
+  =======================================*/
+@media (max-width: 768px) and (min-width: 379px){
+    .project-image{
+        width: 350px;
+        margin: auto;
+    }
 }
